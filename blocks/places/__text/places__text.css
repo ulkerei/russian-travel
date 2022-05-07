@@ -1,0 +1,5 @@
+@media screen and (max-width: 500px) {
+  .places__text {
+    margin: 0 var(--block-margin-side);
+  }
+}

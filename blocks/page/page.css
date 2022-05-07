@@ -1,0 +1,27 @@
+.page {
+  max-width: 1280px;
+  margin: 28px auto 24px;
+  background-color: #2a2c2f;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  color: #fff;
+  --block-margin-side: 48px;
+  --block-margin-between: 92px;
+}
+
+@media screen and (max-width: 1041px) {
+  .page {
+    --block-margin-side: calc(24px + (100vw - 785px)*3/32);
+    --block-margin-between: calc(88px + (100vw - 785px)*3/128);
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .page {
+    --block-margin-side: calc(24px - (785px - 100vw)/56);
+    --block-margin-between: calc(88px - (785px - 100vw)*3/56);
+    margin-top: calc(28px - (785px - 100vw)*3/112);
+  }
+}
