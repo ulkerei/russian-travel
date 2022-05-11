@@ -1,22 +1,21 @@
 .places {
-  margin: 0 var(--block-margin-side) var(--block-margin-between);
-  padding: 0 calc((100vw - 1041px)/2.56);
+  padding: 0 calc((100vw - 1041px)/2.56 + var(--block-margin-side)) var(--block-margin-between);
 }
 
 @media screen and (min-width: 1297px) {
   .places {
-    padding: 0 100px;
+    padding: 0 calc(100px + var(--block-margin-side)) var(--block-margin-between);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .places {
-    padding: 0;
+    padding: 0 var(--block-margin-side) var(--block-margin-between);
   }
 }
 
 @media screen and (max-width: 500px) {
   .places {
-    margin: 0 0 var(--block-margin-between);
+    padding: 0 var(--block-margin-side) var(--block-margin-between);
   }
 }

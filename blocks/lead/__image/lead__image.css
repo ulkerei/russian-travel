@@ -1,9 +1,22 @@
 .lead__image {
-  width: 100%;
+  width: calc(928px + (100vw - 1041px)*7/32);
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 1297px) {
   .lead__image {
     width: 984px;
+  }
+}
+
+@media screen and (max-width: 1041px) {
+  .lead__image {
+    width: calc(928px - (1041px - 100vw)*5/8);
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .lead__image {
+    width: 100%;
   }
 }

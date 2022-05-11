@@ -1,22 +1,25 @@
 .lead {
-  margin: 0 var(--block-margin-side) var(--block-margin-between);
-  padding: 0 calc((100vw - 1041px)/2.56);
+  padding-bottom: var(--block-margin-between);
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
 }
 
+@media screen and (min-width: 1297px) {
+  .lead {
+    padding-bottom: (--block-margin-between);
+  }
+}
+
 @media screen and (max-width: 1041px) {
   .lead {
-    margin: 0 0 var(--block-margin-between);
-    padding: 0 calc((100vw - 785px)*3/16);
+    padding-bottom: var(--block-margin-between);
   }
 }
 
 @media screen and (max-width: 785px) {
   .lead {
-    margin: 0 0 var(--block-margin-between);
-    padding: 0;
+    padding-bottom: var(--block-margin-between);
   }
 }

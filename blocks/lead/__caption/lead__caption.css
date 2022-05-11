@@ -5,11 +5,19 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   align-self: flex-start;
+  margin: 0 0 0 calc(48px + (100vw - 1041px)/2.56);
+  padding: 0;
+}
+
+@media screen and (min-width: 1297px) {
+  .lead__caption {
+    margin-left: 148px;
+  }
 }
 
 @media screen and (max-width: 1041px) {
   .lead__caption {
-    margin-left: calc(24px - (100vw - 785px)*3/32);
+    margin-left: calc(24px + (100vw - 785px)*3/32);
   }
 }
 

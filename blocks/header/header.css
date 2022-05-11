@@ -1,5 +1,5 @@
 .header {
-  margin: 0 var(--block-margin-side) calc(48px + (100vw - 1041px)/32);
+  padding: 0 var(--block-margin-side) calc(48px + (100vw - 1041px)/32);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 785px) {
   .header {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
   }
 }
 

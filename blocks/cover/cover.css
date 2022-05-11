@@ -1,8 +1,7 @@
 .cover {
-  margin-bottom: 80px;
-  box-sizing: border-box;
-  padding: 0 calc((100vw - 1041px)*3/16);
   width: 100%;
+  box-sizing: border-box;
+  padding: 0 calc((100vw - 1041px)*3/16) var(--block-margin-between);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +11,6 @@
 
 @media screen and (min-width: 1297px) {
   .cover {
-    padding: 0 48px;
+    padding: 0 48px var(--block-margin-between);
   }
 }

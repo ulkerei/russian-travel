@@ -1,14 +1,21 @@
 .page {
   max-width: 1280px;
-  margin: 28px auto 24px;
+  --block-margin-side: 48px;
+  --block-margin-between: 92px;
+  padding: 28px 0 24px;
   background-color: #2a2c2f;
   font-family: 'Inter', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   color: #fff;
-  --block-margin-side: 48px;
-  --block-margin-between: 92px;
+}
+
+@media screen and (min-width: 1297px) {
+  .page {
+    padding-left: calc((100vw - 1297px)/2);
+    padding-right: calc((100vw - 1297px)/2);
+  }
 }
 
 @media screen and (max-width: 1041px) {
@@ -22,6 +29,6 @@
   .page {
     --block-margin-side: calc(24px - (785px - 100vw)/56);
     --block-margin-between: calc(88px - (785px - 100vw)*3/56);
-    margin-top: calc(28px - (785px - 100vw)*3/112);
+    padding-top: calc(28px - (785px - 100vw)*3/112);
   }
 }
